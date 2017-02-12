@@ -1,0 +1,24 @@
+// Add @font-face or @import rules here
+
+$fonts: '/fonts';
+
+
+@font-face {
+  font-family: "Source Sans Pro Light";
+  src: url('#{$fonts}/source-sans-pro-light_[allfont.ru].eot');
+  src: url('#{$fonts}/source-sans-pro-light_[allfont.ru].eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts}/SourceSansPro-Light.woff') format('woff'),
+  url('#{$fonts}/source-sans-pro-light_[allfont.ru].ttf') format('truetype');
+  //font-style: normal;
+  //font-weight: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro Extra Light";
+  src: url('#{$fonts}/source-sans-pro-extralight_[allfont.ru].eot');
+  src: url('#{$fonts}/source-sans-pro-extralight_[allfont.ru].eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts}/SourceSansPro-ExtraLight.woff') format('woff'),
+  url('#{$fonts}/source-sans-pro-extralight_[allfont.ru].ttf') format('truetype');
+  //font-style: normal;
+  //font-weight: normal;
+}

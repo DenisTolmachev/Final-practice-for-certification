@@ -1,0 +1,13 @@
+.mainlogo {
+  padding-left: 7px;
+  padding-top: 8px;
+  height: 84px;
+  width: 190px;
+  margin-top: 6px;
+  margin-left: 109px;
+  border-radius: 3px;
+  background-color: $white;
+  .logoimg {
+    @include icons(top-nav-logo);
+  }
+}
