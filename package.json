@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/DenisTolmachev/final-practice#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "css-min": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssmin": "^0.1.7"
   }
 }
