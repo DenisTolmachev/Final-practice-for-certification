@@ -8230,43 +8230,85 @@ th.hidden-lg, td.hidden-lg {
 /* line 1, ../sass/layout/_cont-slider.scss */
 .cont-slider {
   position: relative;
-  width: 540px;
-  margin-top: 24px;
-  margin-left: 79px;
+  max-width: 948px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
-/* line 6, ../sass/layout/_cont-slider.scss */
+/* line 7, ../sass/layout/_cont-slider.scss */
 .cont-slider .img {
   position: relative;
   width: 120px;
-  height: 120px;
+  height: 180px;
+  margin: 0 auto;
+}
+/* line 12, ../sass/layout/_cont-slider.scss */
+.cont-slider .img img {
+  height: 140px;
+  width: 120px;
   border: 1px solid #6e6e6e;
 }
-/* line 11, ../sass/layout/_cont-slider.scss */
-.cont-slider .img img {
-  height: 120px;
-  width: 100px;
-}
 /* line 17, ../sass/layout/_cont-slider.scss */
+.cont-slider .img p {
+  text-align: center;
+  font-family: "Source Sans Pro Light";
+  color: #143959;
+  font-size: 1.938rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+/* line 27, ../sass/layout/_cont-slider.scss */
 .cont-slider .owl-nav {
   display: inline-block;
 }
-/* line 19, ../sass/layout/_cont-slider.scss */
+/* line 29, ../sass/layout/_cont-slider.scss */
 .cont-slider .owl-nav .owl-prev, .cont-slider .owl-nav .owl-next {
   font-size: 0;
   width: 22px;
   height: 22px;
   position: absolute;
-  top: 28px;
+  top: 66px;
 }
-/* line 26, ../sass/layout/_cont-slider.scss */
+/* line 36, ../sass/layout/_cont-slider.scss */
 .cont-slider .owl-nav .owl-prev {
-  left: -32px;
+  left: -21px;
   background-image: url("/img/prev.png");
   background-repeat: no-repeat;
 }
-/* line 31, ../sass/layout/_cont-slider.scss */
+/* line 41, ../sass/layout/_cont-slider.scss */
 .cont-slider .owl-nav .owl-next {
-  right: -30px;
+  right: -21px;
   background-image: url("/img/next.png");
   background-repeat: no-repeat;
+}
+
+/* line 1, ../sass/layout/_content.scss */
+.content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 4, ../sass/layout/_content.scss */
+.content h1 {
+  font-size: 2.75rem;
+  font-family: "Source Sans Pro Light";
+  color: #143959;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+}
+/* line 12, ../sass/layout/_content.scss */
+.content p {
+  height: 112px;
+  margin: 0 100px;
+  text-align: center;
+  font-size: 1.938rem;
+  color: #143959;
+  font-family: "Source Sans Pro Light";
+  overflow: hidden;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+/* line 23, ../sass/layout/_content.scss */
+.content hr {
+  width: 80%;
 }

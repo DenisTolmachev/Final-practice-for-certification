@@ -1,16 +1,26 @@
 .cont-slider {
   position: relative;
-  width: 540px;
-  margin-top: 24px;
-  margin-left: 79px;
+  max-width: 948px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
   .img {
     position: relative;
     width: 120px;
-    height: 120px;
-    border: 1px solid $bordGray;
+    height: 180px;
+    margin: 0 auto;
     img {
-      height: 120px;
-      width: 100px;
+      height: 140px;
+      width: 120px;
+      border: 1px solid $bordGray;
+    }
+    p {
+      text-align: center;
+      font-family: $source-light;
+      color: $fcBlue;
+      font-size: $title;
+      text-transform: uppercase;
+      margin-top: 10px;
     }
   }
 
@@ -21,15 +31,15 @@
       width: 22px;
       height: 22px;
       position: absolute;
-      top: 28px;
+      top: 66px;
     }
     .owl-prev {
-      left: -32px;
+      left: -21px;
       background-image: url("/img/prev.png");
       background-repeat: no-repeat;
     }
     .owl-next {
-      right: -30px;
+      right: -21px;
       background-image: url("/img/next.png");
       background-repeat: no-repeat;
     }

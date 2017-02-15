@@ -1,0 +1,26 @@
+.content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  h1 {
+    font-size: $large-m;
+    font-family: $source-light;
+    color: $fcBlue;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+  }
+  p {
+    height: 112px;
+    margin: 0 100px;
+    text-align: center;
+    font-size: $title;
+    color: $fcBlue;
+    font-family: $source-light;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  hr {
+    width: 80%;
+  }
+}
