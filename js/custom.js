@@ -35,8 +35,16 @@ $(document).ready(function(){
                     items:1,
                     nav:true
                 },
-                700:{
+                400:{
                     items:2,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:true
+                },
+                800:{
+                    items:4,
                     nav:true
                 },
                 1050:{

@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
 
 gulp.task('auto', function () {
     return gulp.src('css/*.css')
