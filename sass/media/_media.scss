@@ -22,6 +22,29 @@
     margin-top: 25px;
     margin-bottom: 25px;
   }
+  .topnav {
+    ul {
+      li {
+        margin: 0 6px;
+        a {
+          font-size: $medium-lg;
+        }
+      }
+    }
+  }
+  .foot {
+    nav {
+      ul {
+        li {
+          margin: 0 6px;
+          a {
+            font-size: $medium-lg;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media all and (max-width: 767px) {
@@ -39,10 +62,11 @@
     position: relative;
     display: inline-block;
     ul {
+      width: 174px;
       position: absolute;
       z-index: 2;
       top: 75%;
-      left: -55px;
+      left: -110px;
       padding: 0 18px;
       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
       border-radius: 6px;

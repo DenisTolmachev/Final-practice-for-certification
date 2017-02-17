@@ -147,13 +147,13 @@ module.exports = function(grunt) {
 				options: {
 					timeout: 10000
 				},
-				dist: [ 'test/index.html' ]
+				dist: [ 'test/registration.html' ]
 			},
 
 			blanket_qunit: {
 				dist: {
 					options: {
-						urls: [ 'test/index.html?coverage&gruntReport' ],
+						urls: [ 'test/registration.html?coverage&gruntReport' ],
 						threshold: 0
 					}
 				}
