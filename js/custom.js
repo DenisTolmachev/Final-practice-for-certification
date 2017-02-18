@@ -65,3 +65,31 @@ jQuery(document).ready(function() {
         e.preventDefault();
     });
 });
+
+/**pop-up window*/
+
+$(document).ready(function(){
+    //Скрыть PopUp при загрузке страницы
+    PopUpRegHide();
+});
+//Функция отображения PopUp
+function PopUpRegShow(){
+    $("#popup1").show();
+}
+//Функция скрытия PopUp
+function PopUpRegHide(){
+    $("#popup1").hide();
+}
+
+$(document).ready(function(){
+    //Скрыть PopUp при загрузке страницы
+    PopUpContHide();
+});
+//Функция отображения PopUp
+function PopUpContShow(){
+    $("#popup2").show();
+}
+//Функция скрытия PopUp
+function PopUpContHide(){
+    $("#popup2").hide();
+}

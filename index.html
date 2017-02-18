@@ -15,6 +15,10 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="js/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="js/owl/owl.theme.default.min.css">
+    <script src="/js/validator.js"></script>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <![endif]-->
 
  </head>
  <body>
@@ -34,8 +38,8 @@
                              <li><a href="#">home</a></li>
                              <li><a href="#">about us</a></li>
                              <li><a href="#">reviews</a></li>
-                             <li><a href="#">contact us</a></li>
-                             <li><a class="cd-signin" href="/pages/registration.html">log in</a></li>
+                             <li><a href="javascript:PopUpContShow()">contact us</a></li>
+                             <li><a class="cd-signin" href="javascript:PopUpRegShow()">log in</a></li>
                          </ul>
                          <a class="toggle-nav" href="#">&#9776;</a>
                      </nav>
@@ -52,9 +56,17 @@
                                  <p>In order to register, click the register button.</p>
                              </article>
                              <div class="buttons">
-                                 <button class="cd-signin" onclick="location.href = '/pages/registration.html'">log in</button>
-                                 <button class="cd-signup" onclick="location.href = '/pages/registration.html'">register</button>
+                                 <button class="cd-signin" onclick="location.href = 'javascript:PopUpRegShow()'">log in</button>
+                                 <button class="cd-signup" onclick="location.href = 'javascript:PopUpRegShow()'">register</button>
                              </div>
+
+
+
+                             <div class="container">
+
+                             </div>
+
+
                          </div>
                          <div class="col-md-6 col-sm-12 col-xs-12">
                              <div class="banner">
@@ -170,8 +182,8 @@
                                  <li><a href="#">home</a></li>
                                  <li><a href="#">about us</a></li>
                                  <li><a href="#">reviews</a></li>
-                                 <li><a href="#">contact us</a></li>
-                                 <li><a class="cd-signin" href="/pages/registration.html">log in</a></li>
+                                 <li><a href="javascript:PopUpContShow()">contact us</a></li>
+                                 <li><a class="cd-signin" href="javascript:PopUpRegShow()">log in</a></li>
                              </ul>
                          </nav>
                      </div>
@@ -188,10 +200,132 @@
      </div>
  </footer>
 
+ <div class="b-popup" id="popup1">
+     <div class="b-popup-content">
+         <a href="javascript:PopUpRegHide()"></a>
+     </div>
+     <div class="flat-design-form">
+         <ul class="tabs">
+             <li><a class="active" href="#login" id="login-tab"><span id="login_icon"></span> Login</a></li>
+             <li><a href="#register" id="register-tab"><span id="signup_icon"></span> Register</a></li>
+         </ul>
+         <div class="form-display show" id="login">
+             <h1>Login</h1>
+             <form action="" method="post" novalidate="">
+                 <fieldset>
+                     <ul>
+                         <li>
+                             <div class="item">
+                                 <input data-validate-length-range="6" name="name" placeholder="Username" required="required" type="text">
+                             </div>
+                         </li>
+                         <li>
+                             <div class="item">
+                                 <input data-validate-length-range="6" name="password" placeholder="Password" required='required' type="password">
+                             </div>
+                         </li>
+                         <li><input class="button" type="submit" value="Login"></li>
+                     </ul>
+                 </fieldset>
+             </form>
+         </div>
+         <div class="form-display hide" id="register">
+             <h1>Register</h1>
+             <form action="" method="post" novalidate="">
+                 <fieldset>
+                     <ul>
+                         <li>
+                             <div class="item">
+                                 <input data-validate-length-range="6" name="name" placeholder="Username" required="required" type="text">
+                             </div>
+                         </li>
+                         <li>
+                             <div class="item">
+                                 <input data-validate-length="6,8" name="password" placeholder="Password" required='required' type="text">
+                             </div>
+                         </li>
+                         <li>
+                             <div class="item">
+                                 <input class='email' name="email" placeholder="Email" required="required" type="email">
+                             </div>
+                         </li>
+
+                         <li><input class="button" id='send' type="submit" value="Sign Up"></li>
+                     </ul>
+                 </fieldset>
+             </form>
+         </div>
+     </div>
+ </div>
+ <div class="b-popup" id="popup2">
+     <div class="b-popup-content">
+         <a href="javascript:PopUpContHide()"></a>
+     </div>
+     <div id="form-main">
+         <div id="form-div">
+             <form class="form" id="form1">
+
+                 <p class="name">
+                     <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                 </p>
+
+                 <p class="email">
+                     <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                 </p>
+
+                 <p class="text">
+                     <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                 </p>
+
+
+                 <div class="submit">
+                     <input type="submit" value="SEND" id="button-blue"/>
+                     <div class="ease"></div>
+                 </div>
+             </form>
+         </div>
+     </div>
+ </div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
  <script src="js/custom.js"></script>
  <script src="js/owl/owl.carousel.min.js"></script>
+ <script src="/js/tabs.js"></script>
+
+
+
+ <script>
+     // initialize the validator function
+     validator.message['date'] = 'not a real date';
+
+     // validate a field on "blur" event, a 'select' on 'change' event & a '.reuired' classed multifield on 'keyup':
+     $('form')
+             .on('blur', 'input[required], input.optional, select.required', validator.checkField)
+             .on('change', 'select.required', validator.checkField)
+             .on('keypress', 'input[required][pattern]', validator.keypress);
+
+     $('.multi.required')
+             .on('keyup blur', 'input', function(){
+                 validator.checkField.apply( $(this).siblings().last()[0] );
+             });
+
+     // bind the validation to the form submit event
+     //$('#send').click('submit');//.prop('disabled', true);
+
+     $('form').submit(function(e){
+         e.preventDefault();
+         var submit = true;
+         // evaluate the form using generic validaing
+         if( !validator.checkAll( $(this) ) ){
+             submit = false;
+         }
+
+         if( submit )
+             this.submit();
+         return false;
+     });
+
+ </script>
  </body>
  </html>
