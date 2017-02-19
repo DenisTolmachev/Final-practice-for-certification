@@ -1,16 +1,16 @@
 /*= TABS
 --------------------------------------------------------*/
 
-.flat-design-form{
+.flat-design-form {
   background: $bcGray;
   margin: 40px auto;
   max-width: 400px;
   height: auto;
   position: relative;
   font-family: $source-light;
-  -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    1px 1px 2px 0 rgba(50, 50, 50, 0.75);
+  box-shadow:         1px 1px 2px 0 rgba(50, 50, 50, 0.75);
   border-radius: 10px;
 
 }
@@ -19,7 +19,6 @@
 }
 
 #register {
-  //background: #0DA1FF;
   padding-bottom: 20px;
 }
 

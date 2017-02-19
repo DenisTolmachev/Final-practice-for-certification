@@ -9,5 +9,6 @@
   background-color: $white;
   .logoimg {
     @include icons(top-nav-logo);
+    cursor: pointer;
   }
 }
